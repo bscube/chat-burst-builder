@@ -9,6 +9,8 @@ import Dashboard from "./pages/Dashboard";
 import Chat from "./pages/Chat";
 import Contacts from "./pages/Contacts";
 import Campaigns from "./pages/Campaigns";
+import AIPrompts from "./pages/AIPrompts";
+import KnowledgeBase from "./pages/KnowledgeBase";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +27,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/chat" element={<Chat />} />
+              <Route path="/ai-prompts" element={<AIPrompts />} />
+              <Route path="/knowledge-base" element={<KnowledgeBase />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/campaigns" element={<Campaigns />} />
               <Route path="/analytics" element={<Dashboard />} />

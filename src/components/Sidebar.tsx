@@ -8,13 +8,17 @@ import {
   Megaphone, 
   BarChart3, 
   Settings,
-  Bell
+  Bell,
+  Brain,
+  BookOpen
 } from 'lucide-react';
 
 const Sidebar = () => {
   const navItems = [
     { icon: LayoutDashboard, label: 'Dashboard', path: '/' },
     { icon: MessageCircle, label: 'Live Chat', path: '/chat' },
+    { icon: Brain, label: 'AI Prompts', path: '/ai-prompts' },
+    { icon: BookOpen, label: 'Knowledge Base', path: '/knowledge-base' },
     { icon: Users, label: 'Contacts', path: '/contacts' },
     { icon: Megaphone, label: 'Campaigns', path: '/campaigns' },
     { icon: BarChart3, label: 'Analytics', path: '/analytics' },
@@ -26,9 +30,9 @@ const Sidebar = () => {
     <div className="bg-gradient-to-b from-slate-900 to-slate-800 text-white w-64 min-h-screen flex flex-col">
       <div className="p-6 border-b border-slate-700">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-          Interakt Pro
+          AIWA
         </h1>
-        <p className="text-slate-400 text-sm mt-1">Customer Engagement</p>
+        <p className="text-slate-400 text-sm mt-1">AI WhatsApp Marketing</p>
       </div>
       
       <nav className="flex-1 px-4 py-6">
